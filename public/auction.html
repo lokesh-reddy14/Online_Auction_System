@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auction - Product</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Auction: <span id="auction-title">Product Name</span></h1>
+    </header>
+
+    <main>
+        <div class="auction-details">
+            <p><strong>Description:</strong> <span id="description">Product Description</span></p>
+            <p><strong>Current Bid:</strong> $<span id="current-bid">0.00</span></p>
+            <p><strong>Current Bidder:</strong> <span id="current-bidder">None</span></p>
+        </div>
+        
+        <div class="bid-form">
+            <input type="number" id="bid-amount" placeholder="Enter your bid">
+            <button onclick="placeBid()">Place Bid</button>
+            <button onclick="dropBid()">Drop</button>
+        </div>
+        
+        <div id="bid-message"></div>
+    </main>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

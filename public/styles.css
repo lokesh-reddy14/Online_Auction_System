@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+}
+
+h1, h2 {
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+#auctions {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.auction-item {
+    background-color: #fff;
+    padding: 15px;
+    border: 1px solid #ccc;
+}
+
+.auction-details {
+    margin-bottom: 20px;
+}
+
+.bid-form input {
+    padding: 5px;
+    margin-right: 10px;
+    width: 200px;
+}
+
+.bid-form button {
+    padding: 5px 10px;
+    cursor: pointer;
+}
